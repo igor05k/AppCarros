@@ -51,6 +51,7 @@ class DetailsViewController: UIViewController {
     
     @objc func didTapVideo() {
         present(playerViewController, animated: true)
+        playerViewController.player?.play()
     }
     
     func configTableView() {
