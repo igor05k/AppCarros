@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="KGk-i7-Jjw" customClass="DetailsTableViewCell" customModule="AppCarros" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ngc-6P-inw">
+                        <rect key="frame" x="0.0" y="0.0" width="355" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="130" id="jd7-PO-JeP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZw-Wh-yPY">
+                        <rect key="frame" x="10" y="130" width="335" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pO9-gb-LcT">
+                        <rect key="frame" x="10" y="166" width="335" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Hl-Dy-KIJ">
+                        <rect key="frame" x="10" y="202" width="335" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Ngc-6P-inw" secondAttribute="trailing" id="1AP-BU-s36"/>
+                    <constraint firstItem="Ngc-6P-inw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9pX-5h-5RM"/>
+                    <constraint firstItem="iZw-Wh-yPY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ICW-kZ-zJx"/>
+                    <constraint firstAttribute="trailing" secondItem="iZw-Wh-yPY" secondAttribute="trailing" constant="10" id="OAR-md-NIZ"/>
+                    <constraint firstItem="0Hl-Dy-KIJ" firstAttribute="top" secondItem="pO9-gb-LcT" secondAttribute="bottom" constant="15" id="PWp-gv-VWU"/>
+                    <constraint firstAttribute="trailing" secondItem="pO9-gb-LcT" secondAttribute="trailing" constant="10" id="Qrx-j0-4vg"/>
+                    <constraint firstItem="0Hl-Dy-KIJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="aFM-FI-VLn"/>
+                    <constraint firstItem="iZw-Wh-yPY" firstAttribute="top" secondItem="Ngc-6P-inw" secondAttribute="bottom" id="cPr-di-AMU"/>
+                    <constraint firstItem="pO9-gb-LcT" firstAttribute="top" secondItem="iZw-Wh-yPY" secondAttribute="bottom" constant="15" id="jad-uV-xjY"/>
+                    <constraint firstAttribute="trailing" secondItem="0Hl-Dy-KIJ" secondAttribute="trailing" constant="10" id="nn9-dd-p2T"/>
+                    <constraint firstItem="pO9-gb-LcT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ny3-m7-tV8"/>
+                    <constraint firstItem="Ngc-6P-inw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wUi-pV-DDS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="carImage" destination="Ngc-6P-inw" id="iCe-lk-GpI"/>
+                <outlet property="carName" destination="iZw-Wh-yPY" id="SiG-wL-coW"/>
+                <outlet property="carType" destination="pO9-gb-LcT" id="UlW-3I-hAb"/>
+                <outlet property="descriptionLabel" destination="0Hl-Dy-KIJ" id="tmr-wS-GWX"/>
+            </connections>
+            <point key="canvasLocation" x="162.30769230769229" y="93.127962085308056"/>
+        </tableViewCell>
+    </objects>
+</document>
